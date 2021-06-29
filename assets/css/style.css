@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+   margin: 0;
+   background-color: turquoise;
+}
+
+header {
+  display: flex;
+ flex-wrap:wrap;  
+  background-color: rgb(177, 177, 204);
+  margin: 10px;
+  padding: 20px;
+  /* flex-direction: row; */
+  justify-content: space-around ; 
+ 
+
+ }
+nav {
+  /* flex-direction: row; */
+  display:flex;
+}
+
+ nav a {
+  display:flex;
+  color:black;
+  padding: 10px;
+  align-items: flex-end;
+  text-decoration: none;
+}  
+/* Completed the header and Navigation section */
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Links-Mypic-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+aside {
+  flex: 0 1 auto; 
+    background-color: #b9c6ae;
+  padding: 80px;
+  text-align: center;
+  
+}
+
+aside a {
+  padding:30px;
+  display:block;
+  /* text-decoration: none; */
+  
+
+}
+.My-pic-info {
+  flex: 1;
+  background-color: rgb(204, 233, 146);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.picture {
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 10px;
+  padding: 10px;
+  flex: 0 1 400px;
+}
+
+.picture header {
+  padding: 20px;
+  background-color: rgb(204, 233, 146);
+}
+
+.picture p {
+  text-align: center;
+
+}
+.picture img {
+  width: 100%;
+}
+
+
+.work-container {
+ margin-top:25px ;
+ margin-left: 25px;
+  width:80%;
+  /* height:330px; */
+  background-color: whitesmoke;
+  border-radius:20px;
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+  display:flex;
+  margin: -7 auto 20px auto;
+  position:relative;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
+}
+.work-container h1 {
+  padding: 30px;
+}
+.work-container .work-text {
+  padding:20px;
+  border: tomato 5px solid;
+  border-radius:15px;
+
+}
+
+
+@media screen and (max-width:480px) {
+  nav , .Links-Mypic-container {
+ flex-direction: column;
+ 
+ }
+ }
