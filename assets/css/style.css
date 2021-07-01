@@ -6,13 +6,13 @@
   --container-color: #dcdcec;
 }
 ::selection {
-  background-color: rgb(80, 196, 167);
+  background-color: rgb(128, 202, 182);
   color:black;
 }
 body {
   font-family: Arial;
    margin: 0;
-   background-color: turquoise;
+   background-color: rgb(173, 218, 213);
 }
 
 header {
@@ -52,6 +52,7 @@ main {
 }
 aside {
   /* flex: 0 1 auto;  */
+  margin: 5px; 
   flex:1;
   background-color: #b9c6ae;
   padding: 25px;
@@ -71,6 +72,7 @@ aside a {
 }
 .about-me {
   /* flex: 0 1 auto; */
+  margin: 5px; 
   flex:1;
   display: flex;
   flex-wrap: wrap;
@@ -89,6 +91,7 @@ aside a {
   flex: 1; 
 }
 .My-pic-info {
+  margin: 5px; 
   flex: 1;
   background-color: rgb(204, 233, 146);
   padding: 20px;
@@ -121,8 +124,8 @@ aside a {
 
 
 .work-container {
- margin:25px ;
-  width:80%;
+ margin: 10px; ;
+  width:100%;
   /* height:330px; */
   background-color: whitesmoke;
   border-radius:20px;
@@ -144,8 +147,8 @@ aside a {
 }
 
 .academic-container {
-  margin:25px ;
-   width:80%;
+  margin: 10px; ;
+  width:100%;
    /* height:330px; */
    background-color: whitesmoke;
    border-radius:20px;
@@ -167,8 +170,8 @@ aside a {
 
 
 .skill-container {
-  margin:25px ;
-   width:80%;
+  margin: 10px; 
+  width:100%;
    background-color: whitesmoke;
    border-radius:20px;
    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
@@ -188,8 +191,8 @@ aside a {
 }
 
 .contact-container {
-  margin:25px ;
-   width:80%;
+  margin: 10px;
+   width: 100%;
    background-color: whitesmoke;
    border-radius:20px;
    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
