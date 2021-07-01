@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --head-foot:rgb(177, 177, 204);
+  --container-color: #dcdcec;
+}
 ::selection {
   background-color: rgb(80, 196, 167);
   color:black;
@@ -14,7 +18,7 @@ body {
 header {
   display: flex;
  flex-wrap:wrap;  
-  background-color: rgb(177, 177, 204);
+  background-color: var(--head-foot);
   margin: 10px;
   padding: 20px;
   /* flex-direction: row; */
@@ -47,19 +51,42 @@ main {
   flex: 1 1 auto;
 }
 aside {
-  flex: 0 1 auto; 
-    background-color: #b9c6ae;
-  padding: 80px;
+  /* flex: 0 1 auto;  */
+  flex:1;
+  background-color: #b9c6ae;
+  padding: 25px;
+  text-align: center;
+  border-radius:20px;
+ }
+ aside h2{
+  padding: 10px;
+  text-align: left;
+ }
+
+aside a {
+  padding: 15px;
+  display:block;
+  /* text-decoration: none; */
+ 
+}
+.about-me {
+  /* flex: 0 1 auto; */
+  flex:1;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content:left; */
+  background-color: rgb(231, 210, 226);
+  border-radius:20px;
+}
+.about-me h2{
+  padding: 20px;
   text-align: center;
   
 }
-
-aside a {
-  padding:30px;
-  display:block;
-  /* text-decoration: none; */
-  
-
+.about-me ul {
+  padding: 20px;
+  margin-top: 25px;
+  flex: 1; 
 }
 .My-pic-info {
   flex: 1;
@@ -68,6 +95,7 @@ aside a {
   display: flex;
   flex-wrap: wrap;
   justify-content:flex-end;
+  border-radius:20px;
 }
 
 .picture {
@@ -80,7 +108,7 @@ aside a {
 
 .picture header {
   padding: 20px;
-  background-color: rgb(204, 233, 146);
+  background-color: rgb(185, 216, 168);
 }
 
 .picture p {
@@ -194,15 +222,11 @@ aside a {
 footer {
   display: flex;
   justify-content: center;
-  background-color: rgb(177, 177, 204);
+  background-color: var(--head-foot);
   padding:20px;
 }
 
 /* Pseudo -classes */
-/* unvisited link */
-a:link {
-  color: red;
-}
 
 /* visited link */
 a:visited {
@@ -222,23 +246,49 @@ a:active {
 .work-container:hover,.work-container:hover .work-text{
   position:relative;
   top:-5px;
+  background-color: var(--container-color);
   box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
   }
   .academic-container:hover,.academic-container:hover .education-text{
     position:relative;
     top:-5px;
+    background-color: var(--container-color);
     box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
     }
     .skill-container:hover,.skill-container:hover .skill-text{
       position:relative;
       top:-5px;
+      background-color: var(--container-color);
       box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
       }
       .contact-container:hover,.contact-container:hover .contact-text{
         position:relative;
         top:-5px;
+        background-color: var(--container-color);
         box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
         }
+aside:hover{
+  position:relative;
+  top:-5px;
+  background:#95c56d;;
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.about-me:hover{
+  position:relative;
+  top:-5px;
+  background-color: rgb(212, 122, 191);
+  box-shadow: inset 0px 0px 8px rgb(35, 12, 245), 0 0 15px rgb(37, 248, 9);
+}
+.My-pic-info:hover {
+  position:relative;
+  top:-5px;
+  background-color: rgb(170, 212, 84);
+  box-shadow: inset 0px 0px 8px rgb(32, 1, 1), 0 0 15px rgb(1, 34, 16);
+}
+
+aside pre:active {
+  background-color: yellowgreen;
+}
 
 span[data-descr] {
           position: relative;
@@ -260,11 +310,34 @@ span[data-descr] {
           color: #000000;
           font-size: 14px;
           z-index: 1;
-        }     
+        }   
+        
+        
+        .text-input:hover,  
+        select:hover, button:hover {
+          box-shadow: 0 0 5px #999;
+        }
+        
+        /* What does this pseudo-class mean? */
+        .text-input:focus {
+          border-right-width: 5px;
+        }
+        
+        /* What does this pseudo-class mean? */
+        .text-input:placeholder-shown {
+          border-style: dashed;
+        }
+
+     .contact-container .button:active{
+        background: blue;
+      }
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
   nav , .Links-Mypic-container {
  flex-direction: column;
+  }
+  .My-pic-info{
+    justify-content: center;
   }
    }
