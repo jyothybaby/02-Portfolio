@@ -89,8 +89,7 @@ aside a {
 
 
 .work-container {
- margin-top:25px ;
- margin-left: 25px;
+ margin:25px ;
   width:80%;
   /* height:330px; */
   background-color: whitesmoke;
@@ -112,10 +111,90 @@ aside a {
 
 }
 
+.academic-container {
+  margin:25px ;
+   width:80%;
+   /* height:330px; */
+   background-color: whitesmoke;
+   border-radius:20px;
+   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+   display:flex;
+   margin: -7 auto 20px auto;
+   position:relative; 
+   justify-content: space-evenly;
+   flex: 1 1 auto;
+ }
+ .academic-container h1 {
+  padding: 30px;
+}
+.academic-container .education-text {
+  padding:20px;
+  border: tomato 5px solid;
+  border-radius:15px;
+}
 
+
+.skill-container {
+  margin:25px ;
+   width:80%;
+   background-color: whitesmoke;
+   border-radius:20px;
+   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+   display:flex;
+   margin: -7 auto 20px auto;
+   position:relative; 
+   justify-content: space-evenly;
+   flex: 1 1 auto;
+ }
+ .skill-container h1 {
+  padding: 30px;
+}
+.skill-container .skill-text {
+  padding:20px;
+  border: tomato 5px solid;
+  border-radius:15px;
+}
+
+.contact-container {
+  margin:25px ;
+   width:80%;
+   background-color: whitesmoke;
+   border-radius:20px;
+   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+   display:flex;
+   margin: -7 auto 20px auto;
+   position:relative; 
+   justify-content: space-evenly;
+   flex: 1 1 auto;
+ }
+ .contact-container h1 {
+  padding: 30px;
+}
+.contact-container .contact-text {
+  padding:20px;
+  border: tomato 5px solid;
+  border-radius:15px;
+}
+.contact-container .button {
+  border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: black
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(177, 177, 204);
+  padding:20px;
+}
 @media screen and (max-width:480px) {
   nav , .Links-Mypic-container {
  flex-direction: column;
- 
- }
- }
+  }
+   }
