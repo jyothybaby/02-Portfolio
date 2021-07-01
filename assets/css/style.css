@@ -1,7 +1,10 @@
 * {
   box-sizing: border-box;
 }
-
+::selection {
+  background-color: rgb(80, 196, 167);
+  color:black;
+}
 body {
   font-family: Arial;
    margin: 0;
@@ -41,6 +44,7 @@ main {
 .Links-Mypic-container {
   display: flex;
   flex-wrap: wrap;
+  flex: 1 1 auto;
 }
 aside {
   flex: 0 1 auto; 
@@ -63,7 +67,7 @@ aside a {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:flex-end;
 }
 
 .picture {
@@ -193,6 +197,72 @@ footer {
   background-color: rgb(177, 177, 204);
   padding:20px;
 }
+
+/* Pseudo -classes */
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+.work-container:hover,.work-container:hover .work-text{
+  position:relative;
+  top:-5px;
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+  }
+  .academic-container:hover,.academic-container:hover .education-text{
+    position:relative;
+    top:-5px;
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    }
+    .skill-container:hover,.skill-container:hover .skill-text{
+      position:relative;
+      top:-5px;
+      box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+      }
+      .contact-container:hover,.contact-container:hover .contact-text{
+        position:relative;
+        top:-5px;
+        box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+        }
+
+span[data-descr] {
+          position: relative;
+          text-decoration: underline;
+          color: rgb(202, 35, 35);
+          cursor: grab;
+}
+        span[data-descr]:hover::after,
+        span[data-descr]:focus::after {
+          content: attr(data-descr);
+          position: absolute;
+          left: 0;
+          top: 24px;
+          min-width: 200px;
+          border: 1px #aaaaaa solid;
+          border-radius: 10px;
+          background-color: #ffffcc;
+          padding: 12px;
+          color: #000000;
+          font-size: 14px;
+          z-index: 1;
+        }     
+
+
 @media screen and (max-width:480px) {
   nav , .Links-Mypic-container {
  flex-direction: column;
