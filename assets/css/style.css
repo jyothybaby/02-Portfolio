@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+ /* Declaring global variable */
 :root {
   --head-foot:rgb(177, 177, 204);
   --container-color: #dcdcec;
@@ -14,7 +15,7 @@ body {
    margin: 0;
    background-color: rgb(173, 218, 213);
 }
-
+/* Header and navigation section */
 header {
   display: flex;
  flex-wrap:wrap;  
@@ -29,6 +30,7 @@ header {
 nav {
   /* flex-direction: row; */
   display:flex;
+  flex-wrap:wrap;  
 }
 
  nav a {
@@ -40,6 +42,7 @@ nav {
 }  
 /* Completed the header and Navigation section */
 
+/* Design for Links, About me, Picture */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -116,8 +119,9 @@ main {
 .picture img {
   width: 100%;
 }
+/* Completed the design for Links, About me, Picture */
 
-
+/* Styles for Experience part */
 .work-container {
  margin: 10px; ;
   width:100%;
@@ -140,7 +144,7 @@ main {
   border-radius:15px;
 
 }
-
+/* Styles for GT Bootcamp project work */
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -189,12 +193,13 @@ main {
   /* padding: 20px; */
   flex-direction: column;
   background: rgb(231, 197, 110);
+  justify-content: center;
  
 }
 .miniproject-01 {
   display: flex;
   flex-wrap: wrap;
-  background: chocolate;
+  background: rgb(231, 194, 167);
   margin:15px;
   border-radius:20px;
   }
@@ -210,7 +215,7 @@ main {
 .miniproject-02 {
   display: flex;
   flex-wrap: wrap;
-  background: cyan;
+  background: rgb(180, 240, 240);
   margin: 15px;
   border-radius:20px;
   
@@ -218,12 +223,12 @@ main {
 .mini-project .miniproject-02 img {
   display: flex;
   flex-wrap: wrap;
-  
   border-radius: 10px;
   padding: 10px;
   width:60%;
 } 
 
+/* Styles for Education part */
 
 .academic-container {
   margin: 10px; ;
@@ -247,7 +252,7 @@ main {
   border-radius:15px;
 }
 
-
+/* Styles for Technical skill set section */
 .skill-container {
   margin: 10px; 
   width:100%;
@@ -268,7 +273,7 @@ main {
   border: tomato 5px solid;
   border-radius:15px;
 }
-
+/* Styles for Contact section */
 .contact-container {
   margin: 10px;
    width: 100%;
@@ -299,11 +304,11 @@ main {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    background-color: black
+    background-color: rgb(94, 90, 90)
 }
+/* Styles for footer */
 footer {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   background-color: var(--head-foot);
   padding:20px;
 }
@@ -324,7 +329,7 @@ a:hover {
 a:active {
   color: blue;
 }
-
+/* Adding some animation to the sections */
 .work-container:hover,.work-container:hover .work-text{
   position:relative;
   top:-5px;
@@ -332,39 +337,62 @@ a:active {
   font-size: 20px;
   background-color: var(--container-color);
   box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-  }
-  .academic-container:hover,.academic-container:hover .education-text{
+}
+.academic-container:hover,.academic-container:hover .education-text{
     position:relative;
     top:-5px;
     font-family: "Times New Roman", Times, serif;
      font-size: 20px;
     background-color: var(--container-color);
     box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-    }
-    .skill-container:hover,.skill-container:hover .skill-text{
+}
+.skill-container:hover,.skill-container:hover .skill-text{
       position:relative;
       top:-5px;
       font-family: "Times New Roman", Times, serif;
       font-size: 20px;
       background-color: var(--container-color);
       box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-      }
-      .contact-container:hover,.contact-container:hover .contact-text{
+}
+.contact-container:hover,.contact-container:hover .contact-text{
         position:relative;
         top:-5px;
         font-family: "Times New Roman", Times, serif;
         font-size: 20px;
         background-color: var(--container-color);
         box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
-        }
+}
 
- .home-work:hover{
+.home-work:hover{
   position:relative;
   top:-5px;
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
-  background:#1b3a02;
-  color:white;
+  background:#71e711;
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.miniproject-01:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background: rgb(121, 97, 81);
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.miniproject-01:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background: rgb(121, 97, 81);
+  box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
+}
+.miniproject-02:hover{
+  position:relative;
+  top:-5px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  background: rgb(48, 214, 214);
   box-shadow: inset 0px 0px 8px rgb(115, 102, 236), 0 0 15px rgb(253, 3, 3);
 }
 .links:hover{
@@ -391,57 +419,51 @@ a:active {
   background-color: rgb(170, 212, 84);
   box-shadow: inset 0px 0px 8px rgb(32, 1, 1), 0 0 15px rgb(1, 34, 16);
 }
-
-aside pre:active {
-  background-color: yellowgreen;
-}
-
+/* Added mouse over in Email under Links section */
 span[data-descr] {
-          position: relative;
-          text-decoration: underline;
-          color: rgb(202, 35, 35);
-          cursor: grab;
+  position: relative;
+  text-decoration: underline;
+  color: rgb(202, 35, 35);
+  cursor: grab;
 }
-        span[data-descr]:hover::after,
-        span[data-descr]:focus::after {
-          content: attr(data-descr);
-          position: absolute;
-          left: 0;
-          top: 24px;
-          min-width: 200px;
-          border: 1px #aaaaaa solid;
-          border-radius: 10px;
-          background-color: #ffffcc;
-          padding: 12px;
-          color: #000000;
-          font-size: 14px;
-          z-index: 1;
-        }   
+span[data-descr]:hover::after,
+span[data-descr]:focus::after {
+    content: attr(data-descr);
+    position: absolute;
+    left: 0;
+    top: 24px;
+    min-width: 200px;
+    border: 1px #aaaaaa solid;
+    border-radius: 10px;
+    background-color: #ffffcc;
+    padding: 12px;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1;
+}   
         
-        
-        .text-input:hover,  
-        select:hover, button:hover {
-          box-shadow: 0 0 5px #999;
-        }
-        
-        /* What does this pseudo-class mean? */
-        .text-input:focus {
-          border-right-width: 5px;
-        }
-        
-        /* What does this pseudo-class mean? */
-        .text-input:placeholder-shown {
-          border-style: dashed;
-        }
+  /* Styles for Contact-form */
+.text-input:hover,  
+select:hover, button:hover {
+  box-shadow: 0 0 5px #999;
+}
+     
+.text-input:focus {
+   border-right-width: 5px;
+}
+.text-input:placeholder-shown {
+border-style: dashed;
+}
 
-     .contact-container .button:active{
-        background: blue;
-      }
+.contact-container .button:active{
+  background: blue;
+}
 
 
 @media screen and (max-width:768px) {
   nav , .Links-Mypic-container , .project-container{
  flex-direction: column;
+ 
   }
   .My-pic-info{
     justify-content: center;
