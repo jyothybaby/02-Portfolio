@@ -16,5 +16,7 @@ In style.css,
 2. Commented my changes in .css file.
 
 <b>Links for the project:</b><br>
-1. GitHub repository URL: https://github.com/jyothybaby/01-CodeRefactor
-2. Live Webpage: https://jyothybaby.github.io/01-CodeRefactor/
+
+1. GitHub repository URL: https://github.com/jyothybaby/02-Portfolio
+2. Live Webpage: https://jyothybaby.github.io/02-Portfolio/
+3. Google Drive: https://drive.google.com/drive/folders/1mXIJg6KPbfGRqtD0ccGS7OhlIUaQihLV?usp=sharing
