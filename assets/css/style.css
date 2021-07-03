@@ -140,35 +140,41 @@ main {
   justify-content: space-evenly;
   flex: 1 1 auto;
 }
-.work-container h1 {
-  padding: 15px;
-}
+
 .work-container .work-text {
   padding:20px;
   border: tomato 5px solid;
   border-radius:15px;
 
 }
+
 /* Styles for GT Bootcamp project work */
 .project-container {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 auto;
+  flex-direction: column;
    /* width:100%; */
   margin: 10px;
   background-color: whitesmoke;
-  border-radius:20px;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
   /* margin: -7 auto 20px auto; */
-   position:relative; 
+  position:relative; 
+
+  border: tomato 5px solid;
+  border-radius:15px;
 
   /* position:relative;
   justify-content: space-evenly;  */
 }
+
 .project-container h1 {
-  margin-top:20px;
-  
+  margin:10px;
  } 
+
+ .proj-coll {
+   display: flex;
+ }
 
  .home-work {
   margin: 5px; 
@@ -185,18 +191,19 @@ main {
   font-size: 25px;
  }
 
-.project-container .home-work img {
-  flex:1;
-  width: 100%;
-  /* border-radius: 25px; */
+.home-work img {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width:100%; 
 }
 
 .mini-project {
   margin: 10px;
   flex : 1;
   display:flex;
-  /* padding: 20px; */
   flex-direction: column;
+  /* padding: 20px; */
   background: rgb(231, 197, 110);
   justify-content: center;
  
@@ -204,17 +211,15 @@ main {
 .miniproject-01 {
   display: flex;
   flex-wrap: wrap;
-  background: rgb(231, 194, 167);
+  background: rgb(180, 240, 240);
   margin:15px;
   border-radius:20px;
   }
 .mini-project .miniproject-01 img {
   display: flex;
   flex-wrap: wrap;
-  
   border-radius: 10px;
-  padding: 10px;
-   width:100%; 
+  width:100%; 
 }
 
 .miniproject-02 {
@@ -229,8 +234,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px;
-  padding: 10px;
-  width:60%;
+  width:100%;
 } 
 
 /* Styles for Education part */
@@ -248,11 +252,9 @@ main {
    justify-content: space-evenly;
    flex: 1 1 auto;
  }
- .academic-container h1 {
-  padding: 30px;
-}
+
 .academic-container .education-text {
-  padding:20px;
+  padding:10px;
   border: tomato 5px solid;
   border-radius:15px;
 }
@@ -270,11 +272,9 @@ main {
    justify-content: space-evenly;
    flex: 1 1 auto;
  }
- .skill-container h1 {
-  padding: 30px;
-}
+
 .skill-container .skill-text {
-  padding:20px;
+  padding:10px;
   border: tomato 5px solid;
   border-radius:15px;
 }
@@ -291,11 +291,9 @@ main {
    justify-content: space-evenly;
    flex: 1 1 auto;
  }
- .contact-container h1 {
-  padding: 30px;
-}
+
 .contact-container .contact-text {
-  padding:20px;
+  padding:10px;
   border: tomato 5px solid;
   border-radius:15px;
 }
@@ -466,9 +464,8 @@ border-style: dashed;
 
 
 @media screen and (max-width:768px) {
-  nav , .Links-Mypic-container , .project-container{
- flex-direction: column;
- 
+  nav , .Links-Mypic-container , .project-container, .proj-coll{
+    flex-direction: column;
   }
   .My-pic-info{
     justify-content: center;
